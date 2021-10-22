@@ -1,0 +1,96 @@
+---
+title: "Notizen Statistikkurs - Lineare Modelle WS 2021"
+author: "Florian Baehr"
+date: "22 10 2021"
+output: html_document
+---
+
+# Notizen "Statistikkurs - Lineare Modelle" WS 2021
+
+moodle-Link: https://moodle.uni-jena.de/course/view.php?id=24297
+
+Zoom-Link: https://uni-jena-de.zoom.us/j/63129081383
+Kenncode: 846301
+
+# 2021-10-22
+
+## lineare Modelle
+
+- Zusammenhänge werden geprüft ob sie kausal sind.
+- Bsp. Regressionen, Korrelationen, Variananalysen -> parametrische Tests im Allgemeinen. 
+- Grundlage für generelle Regressionen (logistische Regression -> dichotome Kodierung)
+
+## einfache Berechnungen in Console
+
+- ^ für Potenz
+- pi für Kreiszahl
+- exp(1) -> Eulersche Zahl
+- NA für "not available"
+
+## Values erzeugen
+
+```{r}
+Variable1 <- 2+3
+Variable2 <- 5
+Variable3 <- Variable1+Variable1
+rm(Variable1) # eine Variable löschen
+rm(list = ls()) # alle Variablen löschen
+```
+
+- Groß- und Kleinschreigung beachten
+- Zahlen zu Beginn des Variablennamen nicht zulässig
+
+## Kodierungen von Values
+
+- dataframes als numerisch kodieren mit as.numeric()
+- Character kodieren mit ""
+
+## Vektoren
+
+```{r}
+Vektor1 <- c(1,4,9) # c = combind-function
+Vektor2 <- 3:100 # Sequenzen
+Vektor3 <- seq(0, 1, 0.1)
+Vektor4 <- c(1,2, NA, 4) # mit einem missing Value
+Vektor1
+Vektor2
+Vektor3
+Vektor4
+```
+
+- "int" sind Ganze Zahlen
+- "num" sind numerische Werte
+- Hilfe > https://www.rstudio.com/resources/cheatsheets/ # Befehlslisten
+
+## Mittelwert berechnen
+
+```{r}
+mean(Vektor4) # missing Value wird erkannt
+?mean # Hilfe für mean() Funktion
+mean(Vektor4, na.rm = TRUE) # um NAs nicht zu berücksichtigen
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
